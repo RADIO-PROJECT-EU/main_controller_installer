@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+	<node pkg="main_controller_installer" type="installer.py" respawn="false" name="main_controller_installer" output="screen">
+		<rosparam file="$(find main_controller_installer)/config/parameters.yaml" command="load" />
+	</node>
+</launch>
