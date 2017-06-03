@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     broadcast_ip = static_ip.split('.')[0] + '.' + static_ip.split('.')[1] + '.' + static_ip.split('.')[2] + '.1'
 
-    command = "sudo -i sed 's/static ip_address=.*\\/24/static ip_address="+static_ip+"\\/24/g' /etc/dhcpcd.conf"
+    command = "sudo sed -i 's/static ip_address=.*\\/24/static ip_address="+static_ip+"\\/24/g' /etc/dhcpcd.conf"
     command = shlex.split(command)
     subprocess.Popen(command)
     sleep(5)
