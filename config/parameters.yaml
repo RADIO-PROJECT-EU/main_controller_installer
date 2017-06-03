@@ -1,6 +1,6 @@
-main_controller_ip: '192.168.1.8'
+main_controller_ip: '192.168.8.200'
 
-robot_ip: '192.168.1.16'
+robot_ip: '192.168.8.100'
 
 # Used for ssh tunnelling
-port_number: 4325
+port_number: 4124
