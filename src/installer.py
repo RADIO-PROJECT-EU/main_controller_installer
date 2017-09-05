@@ -46,7 +46,7 @@ if __name__ == '__main__':
     subprocess.Popen(command)
     sleep(5)
 
-    command = "sed -i 's/ROS_IP=.*/ROS_IP="+static_ip+"/g' /home/pi/startup.sh"
+    command = "sed -i 's/ROS_IP=.*/ROS_IP="+static_ip+"/g' /home/pi/main_controller_startup/startup.sh"
     command = shlex.split(command)
     subprocess.Popen(command)
     sleep(5)
